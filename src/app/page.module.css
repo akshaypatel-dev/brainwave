@@ -95,6 +95,7 @@
 .footer {
 	background-color: #161c2d;
 	color: white;
+	margin-top: 50px;
 }
 .footerSections {
 	display: flex;
