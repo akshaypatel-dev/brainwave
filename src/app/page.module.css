@@ -12,6 +12,7 @@
 .navigation ul {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 100%;
 	align-items: center;
 	float: right;
@@ -100,8 +101,7 @@
 .footerSections {
 	display: flex;
 	justify-content: center;
-	width: 90%;
-	margin: auto;
+	flex-wrap: wrap;
 }
 .footerSections div {
 	font-weight: 200;
@@ -124,4 +124,72 @@
 	align-items: center;
 	justify-content: space-around;
 	width: 15%;
+}
+@media screen and(min-width:768px) and (max-width: 1024px) {
+	.container {
+		width: 98%;
+		margin: auto;
+	}
+	.header {
+		display: inline-block;
+		text-align: center;
+	}
+
+	.navigation ul li a {
+		padding: 0;
+	}
+	.mainHeaderText {
+		font-size: 32px;
+	}
+	.headerSection {
+		width: 80%;
+		margin: auto;
+	}
+	.feature {
+		grid-template-columns: auto auto;
+		grid-area: auto;
+	}
+	.feature div {
+		width: auto;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+	.header {
+		display: inline-block;
+		text-align: center;
+	}
+	.headerSection {
+		width: 90%;
+		margin: auto;
+	}
+	.mainHeaderText {
+		font-size: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.priceSection {
+		flex-wrap: wrap;
+	}
+	.feature,
+	.socialIcons {
+		display: inline-block;
+	}
+	.socialIcons {
+		margin: auto;
+		width: 90%;
+		text-align: center;
+	}
+	.alignIcons {
+		justify-content: center;
+		width: 80%;
+		margin: 20px auto;
+	}
+	.signupbtn {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
