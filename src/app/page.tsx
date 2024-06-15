@@ -332,7 +332,7 @@ export default function Home() {
 					<hr />
 					<div className={styles.socialIcons}>
 						<p className={styles.para}>
-							© 2024 Copyright, All Right Reserved, Made by Seju_ui_ux with
+							© 2024 Copyright, All Right Reserved, Made by Akshay Patel
 						</p>
 						<div className={styles.alignIcons}>
 							<TwitterIcon />
